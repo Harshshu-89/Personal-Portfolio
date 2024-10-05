@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Welcome to my Portfolio!</p>
+                <h1>Hi, I'm <span>Harsh Shukla</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Harsh Shukla, a B Tech student in Computer Science Engineering, passionate about continuous
+                        learning and innovation. I have a strong foundation in Python,
+                        JavaScript, SQL, and React, with hands-on experience in building responsive web applications. My
+                        skills in both Front-end and Back-end development,
+                        enabling me to create dynamic user interfaces and efficient server-side logic.
+
+                        I’m excited to pursue a career in Software Developemnt and Full Stack Development, leveraging my
+                        coding expertise to solve real-world problems.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages : </span><br> C, Python, HTML, CSS, Javascript</li>
+                            <li><span>Databases :</span><br> SQL</li>
+                            <li><span>Libraries :</span><br> React</li>
+                            <!-- <li><span>Framework :</span><br> Tailwind CSS, Angular</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>July 2024 - Aug 2024</span><br>Full Stack Developer Training at Qspiders.</li>
+                            <li><span>Oct 2023 - Nov 2023</span><br>Frontend Developer Intern at Gauravgo Games Technology Pvt. Ltd.</li>
+                            <!-- <li><span>Nov 2023 - Nov 2023</span><br>Frontend developer Intern at Octanet .</li> -->
+                            <!-- <li><span>January 2023 - April 2023</span><br>Java with Data Structure & Algorithm Course at Apna College.</li> -->
+                            <li><span>February 2024 - March 2024</span><br>Python Course at Infosys SpringBoard.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2025</span><br>B Tech "CSE" from Kashi Institute of Technology</li>
+                            <li><span>2020 - 2021</span><br>XII from Little Flower House</li>
+                            <li><span>2018 - 2019</span><br>X from Little Flower House</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------services---------------- -->
+    <!-- <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+    <!-- ----------project------------ -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/music.png">
+                    <div class="layer">
+                        <h3> Image Search Engine</h3>
+                        <p>Technology: <br>HTML , CSS and JavaScript</p>
+                        <a href="https://harshshu-89.github.io/Image-Search-Engine-using-HTML-CSS-Js/"target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/twitter.png">
+                    <div class="layer">
+                        <h3>Twitter Front Page UI Clone</h3>
+                        <p>Technology: <br> HTML , Tailwind CSS</p>
+                        <a href="https://harshshu-89.github.io/X-front-page-UI-clone/"target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/hospital.png">
+                    <div class="layer">
+                        <h3>Hospital Management System (Mini Project)</h3>
+                        <p>Technology: <br> C Programming Language</p>
+                        <a href="https://github.com/Harshshu-89/Hospital-Management-System.git"target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                <img src="images/spotify-1.webp">
+                <div class="layer">
+                    <h3>Sportify Clone</h3>
+                    <p>Tools: <br>HTML / CSS, Javascript</p>
+                    <a href="https://github.com/Harshshu-89"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div> -->
+                <!-- <div class="work">
+                <img src="images/student.png">
+                <div class="layer">
+                    <h3>Student Management System</h3>
+                    <p>Tools: <br>Java , NetBeans , SQL</p>
+                    <a href="https://github.com/Harshshu-89"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div> -->
+            </div>
+            <a target="_blank" href="https://github.com/Harshshu-89" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa fa-paper-plane"></i> <a href="mailto:shuklharsh5128@gmail.com">
+                            shuklaharsh5128@gmail.com </a></p>
+                    <p><i class="fa fa-phone"></i>+91 8953304405</p>
+
+                    <!-- <a href="mailto:shuklharsh5128@gmail.com">shuklharsh5128@gmail.com</a><i class="fa fa-envelope"></i>
+                <br>
+                <br>
+                <a href="Tel:8953304405">8953304405</a> <i class="fa fa-phone"></i> -->
+
+                    <div class="social-icons">
+
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100085045743735"><i
+                                class="fa fa-facebook"></i></a>
+                        <a target="_blank" href="https://twitter.com/mr_rajput25"><i
+                                class="fa fa-twitter-square"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/mr._harsh._00/"><i
+                                class="fa fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/harsh-shukla-2a3152229"><i
+                                class="fa fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Harsh Shukla Resume P.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <!-- <a href="#" target_top="_blank"><img src="arrow-up-solid.svg" height="30px"width="30px" style="position:absolute;right:2%;display: flex;"></a> -->
+            
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Go To Top</button>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright © Harsh. <i class="fas fa-heart"></i> </p>
+        </div>
+    </div>
+    <!-- <a href="#" target_top="_blank">Bottom To TOP</a> -->
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxE0H3rVlhplCKZ1yWpUwZBqFCjfwBSFNxUOoOD5Sbie_RZSSjhn8f1rEBweuxZLZAwbw/exec' // add your own app script link here
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    </script>
+</body>
+
+</html>
